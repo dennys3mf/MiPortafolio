@@ -1,0 +1,157 @@
+/* ----- FONTS ------ */
+@font-face {
+  font-family: portafolio;
+  src: url(../fonts/Cherry\ Monospace-Light.ttf);
+}
+
+/* ----- TITULOS Y PARRAFOS ---- */
+.titulo1 {
+  font-family: portafolio; /* Cambiado a la fuente de portafolio */
+  color: #3c3c3c; /* Cambiado a un tono más oscuro */
+  font-size: 50px;
+  text-align: left; /* Cambiado a la izquierda */
+  margin-left: 20px;
+}
+
+/* Dark */
+body.dark .titulo1 {
+  color: #eeeeee;
+}
+
+.titulo2 {
+  font-family: portafolio; /* Cambiado a la fuente de portafolio */
+  color: #3c3c3c; /* Cambiado a un tono más oscuro */
+  font-size: 50px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+/* Dark */
+body.dark .titulo2 {
+  color: #eeeeee;
+}
+
+.informacion {
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  text-align: left;
+  font-size: 22px;
+  margin-left: 35px;
+}
+
+.informacion1 {
+  font-family: informacion;
+  color: #252525;
+}
+
+.titulo1:hover {
+  text-decoration: underline wavy rgb(209, 190, 190) 7%;
+}
+
+.titulo2:hover {
+  text-decoration: underline wavy rgb(209, 190, 190) 7%;
+}
+
+.palabra {
+  font-weight: bold;
+}
+
+.portafolioo {
+  font-family: portafolio;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Dark */
+body.dark .portafolioo {
+  color: #000000;
+}
+
+/* -------- ESTILOS HABILIDADES ------- */
+.progress-bar {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+/* Dark */
+body.dark .progress-bar {
+  background-color: #292c31;
+}
+
+.percentage1 {
+  display: block;
+  height: 100%;
+  background-color: #fa7e2c;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+/* Agrega estilos similares para las otras percentages */
+
+/* Assigning width of each languages */
+.html {
+  width: 75%;
+}
+
+.css {
+  width: 60%;
+}
+
+.php {
+  width: 30%;
+}
+
+/* Agrega estilos similares para las otras habilidades */
+
+.skills {
+  margin-left: 8px;
+}
+
+/* ------ ESTILOS SECCION PORTAFOLIO ------ */
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: .2s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #3c3c3c; /* Cambiado a un tono más oscuro */
+}
+
+.portfolio {
+  margin-right: 8px;
+}
+
+.learn-more-btn {
+  background: rgb(209, 190, 190);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  margin-left: 80px;
+  margin-right: 10px;
+  font-family: portafolio; /* Cambiado a la fuente de portafolio */
+}
+
+.learn-more-btn:hover {
+  background: rgb(224, 209, 209);
+  color: #fff;
+}
